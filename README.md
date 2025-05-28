@@ -25,22 +25,23 @@ This project forecasts Apple (AAPL) stock prices using **Prophet**, a powerful o
 
 ---
 
-# Prophet Forecast Project
-
-This repository contains code for generating time series forecasts using **Prophet**, a powerful forecasting tool developed by Meta (Facebook).
-
 ## 📸 Output
 
-Once you run the code, a forecast plot will be saved as `forecast_plot.png`. The plot will also be displayed interactively using `matplotlib`.
+The forecast plot will be saved as `forecast_plot.png`.  
+It will also be displayed interactively using `matplotlib`.
+
+---
 
 ## 💡 About Prophet
 
-Prophet is designed for forecasting time series data and excels at handling various challenges, including:
+Prophet is a forecasting tool built by Meta (Facebook) for time series data. It supports modeling:
 
-* **Seasonality:** Automatically detects and models yearly, weekly, and daily seasonality.
-* **Holidays:** Allows for the inclusion of custom holiday effects.
-* **Trend Modeling:** Captures non-linear trends in your data.
-* **Robustness:** Works effectively even with missing data and outliers.
+- Seasonality (yearly, weekly, daily)
+- Holiday effects
+- Non-linear trends
+- Missing data and outliers
+
+---
 
 ## 🌐 How GitHub Fits In
 
@@ -58,16 +59,15 @@ This GitHub repository serves as a central hub for this project:
 
 For a quick and easy way to run this notebook online without any local setup, you can use one of these free platforms:
 
-[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO_NAME/blob/main/YOUR_NOTEBOOK_NAME.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/YOUR_USERNAME/YOUR_REPO_NAME/main?filepath=YOUR_NOTEBOOK_NAME.ipynb)
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VenuYerramsetti/stock-price-forecasting-prophet/blob/main/stock_forecast.ipynb)
 
-**Remember to replace `YOUR_USERNAME`, `YOUR_REPO_NAME`, and `YOUR_NOTEBOOK_NAME.ipynb` with your actual GitHub username, repository name, and the name of your Jupyter Notebook file.**
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VenuYerramsetti/stock-price-forecasting-prophet/main?filepath=stock_forecast.ipynb)
+
+
 
 Alternatively, you can upload the notebook directly to [Google Colab](https://colab.research.google.com/) and run all cells there.
 
-```python
-# No Python code to copy here. This is a README.md file.
-
+---
 
 ## ▶️ How to Run the Project Locally
 
@@ -82,15 +82,14 @@ pip install -r requirements.txt
 # If needed, install manually:
 pip install yfinance prophet matplotlib pandas
 
-# If Prophet fails, try:
+# If Prophet fails to install:
 pip install pystan==2.19.1.1
 pip install prophet
 
 # 3. Run the Code
-# To run the script:
+# Run the script:
 python stock_forecast.py
 
-# Or to run the Jupyter Notebook:
+# Or run the Jupyter Notebook:
 jupyter notebook
 # Then open `stock_forecast.ipynb` and run all cells
-
